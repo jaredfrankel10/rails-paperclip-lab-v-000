@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20180124205250) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "artist_id"
+    t.string   "album_cover_file_name"
+    t.string   "album_cover_content_type"
+    t.integer  "album_cover_file_size"
+    t.datetime "album_cover_updated_at"
   end
 
   add_index "songs", ["artist_id"], name: "index_songs_on_artist_id"
