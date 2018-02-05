@@ -4,7 +4,7 @@ class AddAttachmentAlbumCoverToSongs < ActiveRecord::Migration
        t.attachment :album_cover
      end
    end
- 
+
    def self.down
      remove_attachment :songs, :album_cover
    end
